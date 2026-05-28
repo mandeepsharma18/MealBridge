@@ -76,7 +76,7 @@ main {
 .intro {
     min-height: 260px;
     display: grid;
-    grid-template-columns: 1.2fr 0.9fr;
+    grid-template-columns: minmax(0, 1fr) 320px;
     align-items: center;
     gap: 24px;
     padding: 28px;
@@ -111,12 +111,11 @@ main {
 
 .status-board {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 12px;
 }
 
 .status-board article {
-    min-height: 120px;
+    min-height: 82px;
     padding: 18px;
     border-radius: 8px;
     background: #eef3ef;
@@ -131,7 +130,7 @@ main {
 
 .status-board strong {
     display: block;
-    margin-top: 16px;
+    margin-top: 10px;
     font-size: 32px;
     color: #315f52;
 }
