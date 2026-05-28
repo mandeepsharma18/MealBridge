@@ -12,41 +12,40 @@
             <span class="brand-mark">MB</span>
             <div>
                 <h1>MealBridge</h1>
-                <p>Food donation matcher built with Java, DSA, and basic SQL</p>
+                <p>Food donation matcher using Java, DSA, and basic SQL</p>
             </div>
         </div>
         <a class="github-link" href="https://github.com/mandeepsharma18/MealBridge" target="_blank" rel="noreferrer">GitHub</a>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-copy">
-                <p class="tag">Food rescue made simpler</p>
-                <h2>Match extra meals with people who need them before the food expires.</h2>
+        <section class="intro">
+            <div class="intro-copy">
+                <p class="tag">Food rescue matcher</p>
+                <h2>Track extra food and find the nearest suitable receiver.</h2>
                 <p>
-                    MealBridge is a beginner-friendly Java project that filters donations by food type,
-                    location, quantity, and urgency. The matching logic uses basic DSA concepts so the
-                    project stays practical without becoming overcomplicated.
+                    A simple project idea for reducing food waste. The Java version handles menu-driven
+                    records and matching logic, while this page gives a quick online demo of the same idea.
                 </p>
             </div>
-            <div class="impact-panel" aria-label="Project stats">
-                <div>
+            <div class="status-board" aria-label="Project stats">
+                <article>
+                    <span>Available Meals</span>
                     <strong id="mealCount">135</strong>
-                    <span>meals available</span>
-                </div>
-                <div>
+                </article>
+                <article>
+                    <span>Matched Donors</span>
                     <strong id="matchCount">3</strong>
-                    <span>active matches</span>
-                </div>
-                <div>
+                </article>
+                <article>
+                    <span>Logic Layer</span>
                     <strong>Java</strong>
-                    <span>core logic</span>
-                </div>
+                </article>
             </div>
         </section>
 
         <section class="workspace">
-            <div class="panel">
+            <div class="request-panel">
                 <div class="panel-heading">
                     <h3>Receiver Request</h3>
                     <p>Change the request to see matching donations update.</p>
@@ -74,7 +73,7 @@
                 <button id="matchButton" type="button">Find Best Match</button>
             </div>
 
-            <div class="panel results-panel">
+            <div class="results-panel">
                 <div class="panel-heading">
                     <h3>Available Donations</h3>
                     <p>Sorted by shortest available time first.</p>
@@ -85,15 +84,15 @@
 
         <section class="details">
             <article>
-                <h3>DSA Concepts Used</h3>
+                <h3>DSA</h3>
                 <p>ArrayList storage, linear search, filtering conditions, and bubble sort for urgency-based matching.</p>
             </article>
             <article>
-                <h3>SQL Concepts Used</h3>
+                <h3>SQL</h3>
                 <p>Tables for donations and receivers, insert records, select records, and filter using WHERE with ORDER BY.</p>
             </article>
             <article>
-                <h3>Java Concepts Used</h3>
+                <h3>Java</h3>
                 <p>Classes, objects, methods, encapsulation, Scanner input, loops, conditionals, and menu-driven programming.</p>
             </article>
         </section>
