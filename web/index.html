@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealBridge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <span class="brand-mark">MB</span>
+            <div>
+                <h1>MealBridge</h1>
+                <p>Food donation matcher built with Java, DSA, and basic SQL</p>
+            </div>
+        </div>
+        <a class="github-link" href="https://github.com/mandeepsharma18/MealBridge" target="_blank" rel="noreferrer">GitHub</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="tag">Food rescue made simpler</p>
+                <h2>Match extra meals with people who need them before the food expires.</h2>
+                <p>
+                    MealBridge is a beginner-friendly Java project that filters donations by food type,
+                    location, quantity, and urgency. The matching logic uses basic DSA concepts so the
+                    project stays practical without becoming overcomplicated.
+                </p>
+            </div>
+            <div class="impact-panel" aria-label="Project stats">
+                <div>
+                    <strong id="mealCount">135</strong>
+                    <span>meals available</span>
+                </div>
+                <div>
+                    <strong id="matchCount">3</strong>
+                    <span>active matches</span>
+                </div>
+                <div>
+                    <strong>Java</strong>
+                    <span>core logic</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="workspace">
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3>Receiver Request</h3>
+                    <p>Change the request to see matching donations update.</p>
+                </div>
+
+                <label for="foodType">Food type</label>
+                <select id="foodType">
+                    <option>Rice Meals</option>
+                    <option>Bread</option>
+                    <option>Snacks</option>
+                    <option>Vegetarian Meals</option>
+                </select>
+
+                <label for="location">Location</label>
+                <select id="location">
+                    <option>Indiranagar</option>
+                    <option>Koramangala</option>
+                    <option>Whitefield</option>
+                    <option>MG Road</option>
+                </select>
+
+                <label for="quantity">Required meals</label>
+                <input id="quantity" type="number" value="25" min="1">
+
+                <button id="matchButton" type="button">Find Best Match</button>
+            </div>
+
+            <div class="panel results-panel">
+                <div class="panel-heading">
+                    <h3>Available Donations</h3>
+                    <p>Sorted by shortest available time first.</p>
+                </div>
+                <div id="results" class="results"></div>
+            </div>
+        </section>
+
+        <section class="details">
+            <article>
+                <h3>DSA Concepts Used</h3>
+                <p>ArrayList storage, linear search, filtering conditions, and bubble sort for urgency-based matching.</p>
+            </article>
+            <article>
+                <h3>SQL Concepts Used</h3>
+                <p>Tables for donations and receivers, insert records, select records, and filter using WHERE with ORDER BY.</p>
+            </article>
+            <article>
+                <h3>Java Concepts Used</h3>
+                <p>Classes, objects, methods, encapsulation, Scanner input, loops, conditionals, and menu-driven programming.</p>
+            </article>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
